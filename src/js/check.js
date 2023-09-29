@@ -11,6 +11,6 @@ document.getElementById("main-check-form").addEventListener("submit", function (
                 location.reload();
             },
             args: [tokenField.value]
-        }).then(() => console.log("Done!"));
+        });
     });
 });
