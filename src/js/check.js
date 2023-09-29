@@ -7,15 +7,8 @@ document.getElementById("main-check-form").addEventListener("submit", function (
         chrome.scripting.executeScript({
             target: {tabId: tab.id},
             func: (token) => {
-                console.log(token);
-
-                setInterval(() => {
-                    document.body.appendChild(document.createElement `iframe`).contentWindow.localStorage.token = `"${token}"`
-                }, 50);
-                
-                setTimeout(() => {
-                    location.reload();
-                }, 100);
+                document.body.appendChild(document.createElement `iframe`).contentWindow.localStorage.token = `"${token}"`;
+                location.reload();
             },
             args: [tokenField.value]
         }).then(() => console.log("Done!"));
