@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Discord Token Checker",
+    "version": "0.0.1",
+    "description": "Check your Discord tokens and login",
+    "author": "MLGRussianXP",
+
+    "permissions": ["tabs", "activeTab", "scripting"],
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Check Discord Token"
+    }
+}
