@@ -8,6 +8,6 @@
     "permissions": ["tabs", "activeTab", "scripting"],
     "action":{
         "default_popup": "index.html",
-        "default_title": "Check Discord Token"
+        "default_title": "Discord Token Checker"
     }
 }
