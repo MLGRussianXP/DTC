@@ -4,9 +4,12 @@
     "version": "1.0.0",
     "description": "Check your Discord tokens and login",
     "author": "MLGRussianXP",
+    "icons": {
+        "128": "img/logo/icon128.png"
+    },
 
     "permissions": [
-        "tabs", "activeTab", "scripting"
+        "tabs", "scripting"
     ],
     "action":{
         "default_popup": "index.html",
