@@ -9,7 +9,7 @@
     },
 
     "permissions": [
-        "tabs", "scripting"
+        "scripting"
     ],
     "action":{
         "default_popup": "index.html",
