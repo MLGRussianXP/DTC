@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Discord Token Checker",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Check your Discord tokens and login",
     "author": "MLGRussianXP",
     "icons": {
