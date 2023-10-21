@@ -6,14 +6,29 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="container">
+        <div class="tab">
+            <button class="tablinks defaultOpen" id="login-tab-button" onclick="openTab(event, 'login-tab')">Login</button>
+            <button class="tablinks" id="check-tab-button" onclick="openTab(event, 'check-tab')">Check</button>
+            <button class="tablinks" id="file-tab-button" onclick="openTab(event, 'file-tab')">File</button>
+        </div>
+
+        <div id="login-tab" class="tabcontent">
             <form id="main-check-form">
                 <p class="top-title">Enter your token:</p>
                 <input type="text" id="main-token-input">
                 <input type="submit" class="discord-button primary" value="Login">
             </form>
         </div>
+
+        <div id="check-tab" class="tabcontent">
+            <p>Token check</p>
+        </div>
+
+        <div id="file-tab" class="tabcontent">
+            <p>File check</p>
+        </div>
     </body>
 
-    <script type="text/javascript" src="js/check.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </html>
