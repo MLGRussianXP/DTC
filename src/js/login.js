@@ -1,6 +1,5 @@
-const tokenField = document.getElementById("main-token-input");
-
-document.getElementById("main-check-form").addEventListener("submit", function () {
+// Login function
+function login(login_token) {
     // Open Discord tab
     chrome.tabs.create({ url: "https://discord.com/channels/@me" }, tab => {
         // Execute login script
@@ -14,7 +13,13 @@ document.getElementById("main-check-form").addEventListener("submit", function (
                     location.reload();
                 }, 2500);
             },
-            args: [tokenField.value]
+            args: [login_token]
         });
     });
+};
+
+// Link to main form
+const tokenField = document.getElementById("main-token-input");
+document.getElementById("main-check-form").addEventListener("submit", () => {
+    login(tokenField.value)
 });
