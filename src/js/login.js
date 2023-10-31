@@ -3,6 +3,11 @@ import { login } from './manage-token.js';
 // Link to main form
 const loginTabTokenField = document.getElementById('main-token-input');
 document.getElementById('login-tab-button__submit').addEventListener('click', () => {
+    if (!loginTabTokenField.value) {
+        alert("Enter the token!")
+        return;
+    }
+
     login(loginTabTokenField.value)
 });
 
