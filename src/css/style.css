@@ -109,7 +109,7 @@ p {
 
 /* Text Input */
 
-input[type="text"] {
+input[type="text"], textarea {
     width: 100%;
     padding: 8px;
     
@@ -123,6 +123,6 @@ input[type="text"] {
     transition: .4s;
 }
 
-input[type="text"]:hover {
+input[type="text"]:hover, textarea:hover {
     border: 2px solid #36393e;
 }
