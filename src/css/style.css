@@ -5,6 +5,7 @@
     --black: #1f1f1f;
     --discord-dark: #36393e;
     --discord-primary: #5865f2;
+    --discord-grey: #949ba4;
     --accent: #7429d7;
 }
 
@@ -81,7 +82,7 @@ p {
 
     font-family: 'Gabarito', Roboto, sans-serif;
     font-size: medium;
-    color: #fff;
+    color: var(--white);
 }
 
 .tab button:hover {
@@ -89,7 +90,7 @@ p {
 }
 
 .tab button.active {
-    background-color: #fff;
+    background-color: var(--white);
     color: #1c1c1e;
 }
 
@@ -113,7 +114,7 @@ input[type="text"], textarea {
     width: 100%;
     padding: 8px;
     
-    color: #fff;
+    color: var(--white);
     background-color: #1c1c1e;
 
     border-radius: 8px;
@@ -124,5 +125,5 @@ input[type="text"], textarea {
 }
 
 input[type="text"]:hover, textarea:hover {
-    border: 2px solid #36393e;
+    border: 2px solid var(--discord-dark);
 }
