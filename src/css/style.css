@@ -22,6 +22,10 @@ p {
     color: var(--white);
 }
 
+.top-title {
+    font-size: 20px;
+}
+
 /* Button */
 
 .discord-button {
@@ -89,7 +93,7 @@ p {
     color: #1c1c1e;
 }
 
-.tabcontent {
+.tab__content {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -97,16 +101,10 @@ p {
     padding: 6px 12px;
 }
 
-/* Form */
-
-#main-check-form {
+.tab__form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.top-title {
-    font-size: 20px;
 }
 
 /* Text Input */

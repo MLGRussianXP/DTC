@@ -7,30 +7,32 @@
     </head>
     <body>
         <div class="tab">
-            <button class="tablinks defaultOpen" id="login-tab-button" onclick="openTab(event, 'login-tab')">Login</button>
-            <button class="tablinks" id="check-tab-button" onclick="openTab(event, 'check-tab')">Check</button>
-            <button class="tablinks" id="file-tab-button" onclick="openTab(event, 'file-tab')">File</button>
+            <button class="tab__link default-open" id="login-tab__button">Login</button>
+            <button class="tab__link" id="check-tab__button">Check</button>
+            <button class="tab__link" id="file-tab__button">File</button>
         </div>
 
-        <div id="login-tab" class="tabcontent">
-            <div id="main-check-form">
+        <div id="login-tab" class="tab__content">
+            <div class="tab__form">
                 <p class="top-title">Enter your token:</p>
-                <input type="text" id="main-token-input">
-                <input id="login-tab-button__submit" type="button" class="discord-button primary" value="Login">
+                <input type="text" id="login-tab__input">
+                <input id="login-tab__submit" type="button" class="discord-button primary" value="Login">
             </div>
         </div>
 
-        <div id="check-tab" class="tabcontent">
-            <div id="check-tab-form">
+        <div id="check-tab" class="tab__content">
+            <div class="tab__form">
                 <p class="top-title">Enter your token(s):</p>
-                <textarea id="check-token-input" placeholder="Enter each token on a separate line..." rows="5" cols="30" ></textarea>
-                <input id="check-tab-button__submit" type="button" class="discord-button primary" value="Check">
+                <textarea id="check-tab__input" placeholder="Enter each token on a separate line..." rows="5" cols="30" ></textarea>
+                <input id="check-tab__submit" type="button" class="discord-button primary" value="Check">
             </div>
             <ul id="check-tab__tokens-list"></ul>
         </div>
 
-        <div id="file-tab" class="tabcontent">
-            <p>File check</p>
+        <div id="file-tab" class="tab__content">
+            <div class="tab__form">
+                <p>File check</p>
+            </div>
         </div>
     </body>
 

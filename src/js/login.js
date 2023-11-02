@@ -1,8 +1,8 @@
 import { login } from './manage-token.js';
 
 // Link to main form
-const loginTabTokenField = document.getElementById('main-token-input');
-document.getElementById('login-tab-button__submit').addEventListener('click', () => {
+const loginTabTokenField = document.getElementById('login-tab__input');
+document.getElementById('login-tab__submit').addEventListener('click', () => {
     if (!loginTabTokenField.value) {
         alert("Enter the token!")
         return;
@@ -12,9 +12,9 @@ document.getElementById('login-tab-button__submit').addEventListener('click', ()
 });
 
 // Link to check form
-const checkTabTokenField = document.getElementById('check-token-input');
+const checkTabTokenField = document.getElementById('check-tab__input');
 const checkTabTokenList = document.getElementById('check-tab__tokens-list');
-document.getElementById('check-tab-button__submit').addEventListener('click', () => {
+document.getElementById('check-tab__submit').addEventListener('click', () => {
     // Clear the list
     checkTabTokenList.innerHTML = "";
 
