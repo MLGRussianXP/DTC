@@ -110,7 +110,7 @@ p {
 
 /* Text Input */
 
-input[type="text"], textarea {
+input[type="text"] {
     width: 100%;
     padding: 8px;
     
@@ -124,6 +124,6 @@ input[type="text"], textarea {
     transition: .4s;
 }
 
-input[type="text"]:hover, textarea:hover {
+input[type="text"]:hover {
     border: 2px solid var(--discord-dark);
 }

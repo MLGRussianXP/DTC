@@ -8,7 +8,6 @@
     <body>
         <div class="tab">
             <button class="tab__link default-open" id="login-tab__button">Login</button>
-            <button class="tab__link" id="check-tab__button">Check</button>
             <button class="tab__link" id="file-tab__button">File</button>
         </div>
 
@@ -18,15 +17,6 @@
                 <input type="text" id="login-tab__input">
                 <input id="login-tab__submit" type="button" class="discord-button primary" value="Login">
             </div>
-        </div>
-
-        <div id="check-tab" class="tab__content">
-            <div class="tab__form">
-                <p class="top-title">Enter your token(s):</p>
-                <textarea id="check-tab__input" placeholder="Enter each token on a separate line..." rows="5" cols="30" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
-                <input id="check-tab__submit" type="button" class="discord-button primary" value="Check">
-            </div>
-            <ul id="check-tab__tokens-list"></ul>
         </div>
 
         <div id="file-tab" class="tab__content">

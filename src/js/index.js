@@ -18,7 +18,6 @@ function openTab(evt, tabName) {
 
 // Setup handlers
 document.getElementById('login-tab__button').onclick = function(event) { openTab(event, 'login-tab') };
-document.getElementById('check-tab__button').onclick = function(event) { openTab(event, 'check-tab') };
 document.getElementById('file-tab__button').onclick = function(event) { openTab(event, 'file-tab') };
 
 // Open default tab
