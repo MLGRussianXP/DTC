@@ -59,6 +59,7 @@ p {
 }
 
 /* Tabs */
+
 .tab {
     display: flex;
     overflow: hidden;
@@ -108,7 +109,12 @@ p {
     justify-content: center;
 }
 
-/* Text Input */
+#file-tab__upload-file {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
 
 input[type="text"] {
     width: 100%;
@@ -126,4 +132,30 @@ input[type="text"] {
 
 input[type="text"]:hover {
     border: 2px solid var(--discord-dark);
+}
+
+input[type=file] {
+    padding: 8px;
+    border-radius: 10px;
+
+    background-color: #1c1c1e;
+    color: var(--white);
+}
+
+input[type=file]::file-selector-button {
+    padding: 10px 20px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 10px;
+
+    font-family: 'Gabarito', Roboto, sans-serif;
+    color: var(--white);
+    background: var(--discord-primary);
+    cursor: pointer;
+
+    transition: .4s;
+}
+  
+input[type=file]::file-selector-button:hover {
+    background-color: #4e59cf;
 }
