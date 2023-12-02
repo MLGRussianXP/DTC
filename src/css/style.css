@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
 
 :root {
+    --width: 300px;
+    --height: 500px;
+
     --white: #f1f1f1;
     --black: #1f1f1f;
     --discord-dark: #36393e;
@@ -10,13 +13,14 @@
 }
 
 html {
-    width: 300px;
-    height: 500px;
+    width: var(--width);
+    height: var(--height);
 }
 
 body {
     background-color: var(--discord-dark);
     font-family: 'Gabarito', Roboto, sans-serif;
+    counter-reset: all;
 }
 
 p {
@@ -158,4 +162,28 @@ input[type=file]::file-selector-button {
   
 input[type=file]::file-selector-button:hover {
     background-color: #4e59cf;
+}
+
+/* File tab */
+
+#file-tab__output {
+    padding: 0;
+    color: var(--white);
+    list-style-position: outside;
+}
+
+.file-tab__li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.file-tab__li__icon {
+    margin-left: 4px;
+    margin-right: 8px;
+}
+
+.file-tab__li::before {
+    counter-increment: all;
+    content: counter(all) ".";
 }
