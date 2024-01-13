@@ -9,11 +9,16 @@
     },
 
     "permissions": [
-        "scripting"
+        "scripting",
+        "contextMenus"
     ],
     "action":{
         "default_popup": "index.html",
         "default_title": "Discord Token Checker"
+    },
+    "background": {
+        "service_worker": "js/service-worker.js",
+        "type": "module"
     },
     "host_permissions": [
         "http://discord.com/*/",

@@ -18,4 +18,22 @@ function login(login_token) {
     });
 };
 
-export { login };
+async function isValid(token) {
+    const url = 'https://discord.com/api/v10/users/@me';
+    const headers = {
+        Authorization: token,
+    };
+  
+    try {
+        const response = await fetch(
+            url, { headers }
+        );
+  
+        return response.status === 200;
+
+    } catch (error) {
+        return false; // An error occurred during the request
+    }
+}
+
+export { login, isValid };

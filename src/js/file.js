@@ -1,23 +1,4 @@
-async function isTokenValid(token) {
-    const url = 'https://discord.com/api/v10/users/@me';
-    const headers = {
-        Authorization: token,
-    };
-  
-    try {
-        const response = await fetch(
-            url, { headers }
-        );
-  
-        if (response.status === 200)
-            return true; // Token is valid; the user is authenticated
-        else
-            return false; // Token is invalid or expired
-
-    } catch (error) {
-        return false; // An error occurred during the request
-    }
-}
+import { isValid } from './manage-token.js';
 
 // Link to the file form
 const fileTabTokenList = document.getElementById('file-tab__upload-file');
@@ -53,7 +34,7 @@ document.getElementById('file-tab__submit').addEventListener('click', () => {
                 li.appendChild(text);
                 fileTabOutputOl.appendChild(li);
 
-                if (await isTokenValid(element))
+                if (await isValid(element))
                     icon.src = '/img/icon/success.svg';
                 else
                     icon.src = '/img/icon/failure.svg';
