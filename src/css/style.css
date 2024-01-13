@@ -104,18 +104,13 @@ p {
     display: flex;
     justify-content: center;
     border-top: none;
-    padding: 6px 12px;
+    padding: 4px 12px;
 }
 
 .tab__form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-#file-tab__upload-file {
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 /* Inputs */
@@ -166,24 +161,39 @@ input[type=file]::file-selector-button:hover {
 
 /* File tab */
 
+#file-tab__upload-file {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 #file-tab__output {
     padding: 0;
     color: var(--white);
-    list-style-position: outside;
 }
 
-.file-tab__li {
+#file-tab__output li {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    font-size: 12px;
 }
 
-.file-tab__li__icon {
-    margin-left: 4px;
-    margin-right: 8px;
+.icon-valid {
+    background-color: #2ecc71;
 }
 
-.file-tab__li::before {
-    counter-increment: all;
-    content: counter(all) ".";
+.icon-invalid {
+    background-color: #e74c3c;
+}
+
+.icon-pending {
+    background-color: #f1c40f;
+}
+
+#file-tab__output li div {
+    min-width: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
